@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 10
+    },
+    "auditLog": "logs/.c0115cc9b0c6e4e495ae2c700c766f12225a0603-audit.json",
+    "files": [
+        {
+            "date": 1746958001809,
+            "name": "logs/budget-management-log-2025-05-11.log",
+            "hash": "e86e21d1ffa4ab4ebe5148da681e4ca585fea64ba84d49fbd0da2be97cd8fbd4"
+        }
+    ],
+    "hashType": "sha256"
+}
