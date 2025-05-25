@@ -2406,3 +2406,69 @@ Seno Expiry Date fs = ;
 2025-05-25T14:06:03.455Z [32minfo[39m: 	EXIT:: extractDocContent EID
 2025-05-25T14:06:03.455Z [32minfo[39m: 	Type: POST -- Request: {"doctype":"EID","filename":"1748181955636-EID_Suleman_3.jpg"} -- URL: http://localhost:4003/genai-explorations/data-extractor/extract -- Status: 200 -- Response Time: 4416.241 ms
 
+2025-05-25T14:11:00.231Z [32minfo[39m: 	DB connection established successfully!
+2025-05-25T14:11:00.239Z [32minfo[39m: 	Listening to port 4003
+2025-05-25T14:11:25.437Z [32minfo[39m: 	Type: POST -- Request: {} -- URL: http://localhost:4003/genai-explorations/data-extractor/upload?doctype=EID -- Status: 500 -- Response Time: 11.583 ms
+
+2025-05-25T14:11:30.958Z [32minfo[39m: 	Type: POST -- Request: {} -- URL: http://localhost:4003/genai-explorations/data-extractor/upload?doctype=EID -- Status: 500 -- Response Time: 2.981 ms
+
+2025-05-25T14:12:14.501Z [32minfo[39m: 	Type: POST -- Request: {} -- URL: http://localhost:4003/genai-explorations/data-extractor/upload?doctype=EID -- Status: 500 -- Response Time: 2.812 ms
+
+2025-05-25T14:13:22.995Z [32minfo[39m: 	Type: POST -- Request: {} -- URL: http://localhost:4003/genai-explorations/data-extractor/upload?doctype=EID -- Status: 500 -- Response Time: 2.302 ms
+
+2025-05-25T14:15:40.624Z [32minfo[39m: 	Type: POST -- Request: {} -- URL: http://localhost:4003/genai-explorations/data-extractor/upload?doctype=EID -- Status: 500 -- Response Time: 1.933 ms
+
+2025-05-25T14:15:56.123Z [32minfo[39m: 	Type: POST -- Request: {} -- URL: http://localhost:4003/genai-explorations/data-extractor/upload?doctype=EID -- Status: 500 -- Response Time: 2.280 ms
+
+2025-05-25T14:16:55.817Z [32minfo[39m: 	Type: POST -- Request: {} -- URL: http://localhost:4003/genai-explorations/data-extractor/upload?doctype=EID -- Status: 500 -- Response Time: 1.636 ms
+
+2025-05-25T14:17:34.703Z [32minfo[39m: 	Type: POST -- Request: {} -- URL: http://localhost:4003/genai-explorations/data-extractor/upload?doctype=PASSPORT -- Status: 500 -- Response Time: 2.013 ms
+
+2025-05-25T14:19:18.110Z [32minfo[39m: 	Type: POST -- Request: {} -- URL: http://localhost:4003/genai-explorations/data-extractor/upload?doctype=EID -- Status: 500 -- Response Time: 2.751 ms
+
+2025-05-25T14:19:37.823Z [32minfo[39m: 	DB connection established successfully!
+2025-05-25T14:19:37.827Z [32minfo[39m: 	Listening to port 4003
+2025-05-25T14:20:10.636Z [32minfo[39m: 	Type: POST -- Request: {} -- URL: http://localhost:4003/genai-explorations/data-extractor/upload?doctype=EID -- Status: 200 -- Response Time: 19.760 ms
+
+2025-05-25T14:20:13.334Z [32minfo[39m: 	Type: OPTIONS -- Request: {} -- URL: http://localhost:4003/genai-explorations/data-extractor/extract -- Status: 204 -- Response Time: 0.652 ms
+
+2025-05-25T14:20:13.337Z [32minfo[39m: 	ENTRY:: extractDocContent EID
+2025-05-25T14:20:13.337Z [32minfo[39m: 	extractDocContent EID imagePath /Users/kiranjoshi/Documents/Kiran/projects/genai-explorations/genai-explorations-be/assets/eid/ filename 1748182810619-EID_Suleman_3.jpg filePath /Users/kiranjoshi/Documents/Kiran/projects/genai-explorations/genai-explorations-be/assets/eid/1748182810619-EID_Suleman_3.jpg
+2025-05-25T14:20:15.867Z [32minfo[39m: 	tessaract result ERT Tr Tr re RRR
+SS SSS SN CT
+UNITED ARAB EMIRATES poy Elciisialliniiy
+Baononommiomee [fll Lids hE 4
+SINAN CZ (A OH
+Pa AVA Rastdent identity Card BAIA Ip
+SS RN Soa A
+oN ANG x talon
+SIN ID Number 453 4 NSIS:
+
+2 784-1991-7209408-0 NS SSRN 1
+= is hi
+77 Name: Suleman Ahmad Munawar Ahmad | i
+
+; Date of Birth: 19/04/1991 GNA Raa)
+NAR SEN p hy hand
+SS ~ Nationality: Pakistan RSA
+
+J obthed Issuing Date | Jue¥l 225 : 2
+
+RO STN ame 18/01/2024 SN
+
+Seno Expiry Date fs = ;
+2 J SNAUre | ph 17012026 ~Sexim.
+
+2025-05-25T14:20:15.868Z [32minfo[39m: 	ENTRY:: extractData doctype EID
+2025-05-25T14:20:18.855Z [32minfo[39m: 	Open AI response {
+  "full_name": "Suleman Ahmad Munawar Ahmad",
+  "nationality": "Pakistan",
+  "gender": "",
+  "date_of_birth": "1991-04-19",
+  "id_number": "784-1991-7209408-0",
+  "expiry_date": "2026-01-17",
+  "issue_date": "2024-01-18"
+}
+2025-05-25T14:20:18.855Z [32minfo[39m: 	EXIT:: extractDocContent EID
+2025-05-25T14:20:18.856Z [32minfo[39m: 	Type: POST -- Request: {"doctype":"EID","filename":"1748182810619-EID_Suleman_3.jpg"} -- URL: http://localhost:4003/genai-explorations/data-extractor/extract -- Status: 200 -- Response Time: 5520.512 ms
+

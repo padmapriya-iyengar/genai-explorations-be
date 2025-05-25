@@ -20,8 +20,8 @@ const configuration = {
         logging: false
     },
     tesseract:{
-        passport_path:'/Users/kiranjoshi/Documents/Kiran/projects/genai-explorations/data-extractor/assets/passport/',
-        eid_path:'/Users/kiranjoshi/Documents/Kiran/projects/genai-explorations/data-extractor/assets/eid/',
+        passport_path:'/Users/kiranjoshi/Documents/Kiran/projects/genai-explorations/genai-explorations-be/assets/passport/',
+        eid_path:'/Users/kiranjoshi/Documents/Kiran/projects/genai-explorations/genai-explorations-be/assets/eid/',
         config:{
             lang: 'eng', 
             oem: 1,
