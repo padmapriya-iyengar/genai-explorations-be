@@ -10,18 +10,9 @@ const configuration = {
         folder_path: './/logs//',
         file_path: 'data-extractor-log-%DATE%.log'
     },
-    db: {
-        schema: 'genai_explorations_db',
-        username: 'appuser',
-        password: 'appuser@123',
-        host: 'localhost',
-        dialect: 'mysql',
-        timezone: '+04:00',
-        logging: false
-    },
     tesseract:{
-        passport_path:'/Users/kiranjoshi/Documents/Kiran/projects/genai-explorations/genai-explorations-be/assets/passport/',
-        eid_path:'/Users/kiranjoshi/Documents/Kiran/projects/genai-explorations/genai-explorations-be/assets/eid/',
+        passport_path:'d:/Nandu/projects/genai-explorations-be/assets/passport/',
+        eid_path:'d:/Nandu/projects/genai-explorations-be/assets/eid/',
         config:{
             lang: 'eng', 
             oem: 1,

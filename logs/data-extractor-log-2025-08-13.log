@@ -1,0 +1,133 @@
+2025-08-13T17:59:21.399Z [31merror[39m: 	Unable to connect to database
+2025-08-13T17:59:21.400Z [32minfo[39m: 	DB Connection Ended!!
+2025-08-13T18:04:53.930Z [31merror[39m: 	Unable to connect to database
+2025-08-13T18:04:53.931Z [32minfo[39m: 	DB Connection Ended!!
+2025-08-13T18:10:42.464Z [32minfo[39m: 	Starting server...
+2025-08-13T18:10:42.468Z [32minfo[39m: 	Listening to port 4003
+2025-08-13T18:10:57.372Z [32minfo[39m: 	Type: POST -- Request: {} -- URL: http://localhost:4003/genai-explorations/data-extractor/upload?doctype=PASSPORT -- Status: 200 -- Response Time: 11.610 ms
+
+2025-08-13T18:10:59.073Z [32minfo[39m: 	Type: OPTIONS -- Request: {} -- URL: http://localhost:4003/genai-explorations/data-extractor/extract -- Status: 204 -- Response Time: 0.611 ms
+
+2025-08-13T18:10:59.086Z [32minfo[39m: 	ENTRY:: extractDocContent PASSPORT
+2025-08-13T18:10:59.086Z [32minfo[39m: 	extractDocContent PASSPORT imagePath d:/Nandu/projects/genai-explorations-be/assets/passport/ filename 1755108657364-Passport_Front.jpg filePath d:/Nandu/projects/genai-explorations-be/assets/passport/1755108657364-Passport_Front.jpg
+2025-08-13T18:11:01.712Z [32minfo[39m: 	tessaract result em er oo Gc SEE ESD Bley
+i URAYURISA REPUBLIC OF INDIA |
+E—— 1 TA) ¥ieg ws / Country Code areralE wi./ Passport No.
+; = P IND $1936123
+' Summ Sumame : i
+JOSHI
+. © Rw nan we / Given Name(s) pe Bln
+KIRAN a $e |
+| | ga Nationality fem ex SEAM Doo of Birth
+HII / INDIAN Mo 1070971988 |
+wer Place of Birth ARE ER eg
+NARVA, TELANGANA Lr ER
+— \ TT Grd ww un wena / Place of issug’ "iz as 4
+tf “1 HYDERABAD fe Res :
+a Sid wr 4 (oid / Date of Issue wie wi ffbr7 Dane of Expiry
+L ee LL. oiUREERS
+P<INDJOSHIK<KKIRANCLCLLLLLLLLLLLLLLLLLLLLLLLLK
+$1936123<1INDBBO9106M28B06055<<<<LLLLLLLLLLLO
+ee EE, B »
+
+2025-08-13T18:11:01.712Z [32minfo[39m: 	ENTRY:: extractData doctype PASSPORT
+2025-08-13T18:11:04.163Z [32minfo[39m: 	Open AI response {
+  "full_name": "KIRAN JOSHI",
+  "id_number": "S1936123",
+  "nationality": "INDIAN",
+  "dob": "10/09/1988",
+  "place_of_birth": "NARVA, TELANGANA",
+  "date_of_issue": "",
+  "date_of_expiry": "",
+  "gender": "M",
+  "issuing_country": "REPUBLIC OF INDIA",
+  "mrz": "P<INDJOSHIK<KKIRANCLCLLLLLLLLLLLLLLLLLLLLLLLLK\n$1936123<1INDBBO9106M28B06055<<<<LLLLLLLLLLLO"
+}
+2025-08-13T18:11:04.163Z [32minfo[39m: 	EXIT:: extractDocContent PASSPORT
+2025-08-13T18:11:04.164Z [32minfo[39m: 	Type: POST -- Request: {"doctype":"PASSPORT","filename":"1755108657364-Passport_Front.jpg"} -- URL: http://localhost:4003/genai-explorations/data-extractor/extract -- Status: 200 -- Response Time: 5089.660 ms
+
+2025-08-13T18:12:10.807Z [32minfo[39m: 	Type: OPTIONS -- Request: {} -- URL: http://localhost:4003/genai-explorations/data-extractor/extract -- Status: 204 -- Response Time: 0.119 ms
+
+2025-08-13T18:12:10.809Z [32minfo[39m: 	ENTRY:: extractDocContent PASSPORT
+2025-08-13T18:12:10.810Z [32minfo[39m: 	extractDocContent PASSPORT imagePath d:/Nandu/projects/genai-explorations-be/assets/passport/ filename 1755108657364-Passport_Front.jpg filePath d:/Nandu/projects/genai-explorations-be/assets/passport/1755108657364-Passport_Front.jpg
+2025-08-13T18:12:12.428Z [32minfo[39m: 	tessaract result em er oo Gc SEE ESD Bley
+i URAYURISA REPUBLIC OF INDIA |
+E—— 1 TA) ¥ieg ws / Country Code areralE wi./ Passport No.
+; = P IND $1936123
+' Summ Sumame : i
+JOSHI
+. © Rw nan we / Given Name(s) pe Bln
+KIRAN a $e |
+| | ga Nationality fem ex SEAM Doo of Birth
+HII / INDIAN Mo 1070971988 |
+wer Place of Birth ARE ER eg
+NARVA, TELANGANA Lr ER
+— \ TT Grd ww un wena / Place of issug’ "iz as 4
+tf “1 HYDERABAD fe Res :
+a Sid wr 4 (oid / Date of Issue wie wi ffbr7 Dane of Expiry
+L ee LL. oiUREERS
+P<INDJOSHIK<KKIRANCLCLLLLLLLLLLLLLLLLLLLLLLLLK
+$1936123<1INDBBO9106M28B06055<<<<LLLLLLLLLLLO
+ee EE, B »
+
+2025-08-13T18:12:12.429Z [32minfo[39m: 	ENTRY:: extractData doctype PASSPORT
+2025-08-13T18:12:14.274Z [32minfo[39m: 	Open AI response ```json
+{
+  "full_name": "KIRAN JOSHI",
+  "id_number": "S1936123",
+  "nationality": "INDIAN",
+  "dob": "07/09/1988",
+  "place_of_birth": "NARVA, TELANGANA",
+  "date_of_issue": "",
+  "date_of_expiry": "",
+  "gender": "",
+  "issuing_country": "IND",
+  "mrz": "P<INDJOSHIK<KKIRANCLCLLLLLLLLLLLLLLLLLLLLLLLLK\n$1936123<1INDBBO9106M28B06055<<<<LLLLLLLLLLLO"
+}
+```
+2025-08-13T18:12:14.274Z [32minfo[39m: 	EXIT:: extractDocContent PASSPORT
+2025-08-13T18:12:14.275Z [31merror[39m: 	EXIT:: error:: extractDocContent PASSPORT {}
+2025-08-13T18:12:31.610Z [32minfo[39m: 	Type: POST -- Request: {"doctype":"PASSPORT","filename":"1755108657364-Passport_Front.jpg"} -- URL: http://localhost:4003/genai-explorations/data-extractor/extract -- Status: 200 -- Response Time: - ms
+
+2025-08-13T18:12:37.766Z [32minfo[39m: 	Type: POST -- Request: {} -- URL: http://localhost:4003/genai-explorations/data-extractor/upload?doctype=PASSPORT -- Status: 200 -- Response Time: 3.135 ms
+
+2025-08-13T18:12:38.654Z [32minfo[39m: 	Type: OPTIONS -- Request: {} -- URL: http://localhost:4003/genai-explorations/data-extractor/extract -- Status: 204 -- Response Time: 0.310 ms
+
+2025-08-13T18:12:38.655Z [32minfo[39m: 	ENTRY:: extractDocContent PASSPORT
+2025-08-13T18:12:38.656Z [32minfo[39m: 	extractDocContent PASSPORT imagePath d:/Nandu/projects/genai-explorations-be/assets/passport/ filename 1755108757763-Passport_Front.jpg filePath d:/Nandu/projects/genai-explorations-be/assets/passport/1755108757763-Passport_Front.jpg
+2025-08-13T18:12:41.249Z [32minfo[39m: 	tessaract result em er oo Gc SEE ESD Bley
+i URAYURISA REPUBLIC OF INDIA |
+E—— 1 TA) ¥ieg ws / Country Code areralE wi./ Passport No.
+; = P IND $1936123
+' Summ Sumame : i
+JOSHI
+. © Rw nan we / Given Name(s) pe Bln
+KIRAN a $e |
+| | ga Nationality fem ex SEAM Doo of Birth
+HII / INDIAN Mo 1070971988 |
+wer Place of Birth ARE ER eg
+NARVA, TELANGANA Lr ER
+— \ TT Grd ww un wena / Place of issug’ "iz as 4
+tf “1 HYDERABAD fe Res :
+a Sid wr 4 (oid / Date of Issue wie wi ffbr7 Dane of Expiry
+L ee LL. oiUREERS
+P<INDJOSHIK<KKIRANCLCLLLLLLLLLLLLLLLLLLLLLLLLK
+$1936123<1INDBBO9106M28B06055<<<<LLLLLLLLLLLO
+ee EE, B »
+
+2025-08-13T18:12:41.249Z [32minfo[39m: 	ENTRY:: extractData doctype PASSPORT
+2025-08-13T18:12:44.232Z [32minfo[39m: 	Open AI response {
+  "full_name": "KIRAN JOSHI",
+  "id_number": "S1936123",
+  "nationality": "INDIAN",
+  "dob": "07/09/1988",
+  "place_of_birth": "NARVA, TELANGANA",
+  "date_of_issue": "07/06/2019",
+  "date_of_expiry": "06/06/2029",
+  "gender": "",
+  "issuing_country": "IND",
+  "mrz": "P<INDJOSHIK<KKIRANCLCLLLLLLLLLLLLLLLLLLLLLLLLK\n$1936123<1INDBBO9106M28B06055<<<<LLLLLLLLLLLO"
+}
+2025-08-13T18:12:44.232Z [32minfo[39m: 	EXIT:: extractDocContent PASSPORT
+2025-08-13T18:12:44.233Z [32minfo[39m: 	Type: POST -- Request: {"doctype":"PASSPORT","filename":"1755108757763-Passport_Front.jpg"} -- URL: http://localhost:4003/genai-explorations/data-extractor/extract -- Status: 200 -- Response Time: 5577.892 ms
+

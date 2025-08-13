@@ -8,7 +8,6 @@ const cors = require('cors');
 const configuration = require('./config/configuration')
 const logger = require('./root/logger')
 const root = require('./src/controllers/common')
-const sequelize = require('./root/db-connect')
 
 const port = configuration.port
 
@@ -31,20 +30,11 @@ app.use(function (req, res, next) {
 
 app.use(cookieparser())
 
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'http://localhost:3001' }));
 
 app.use('/genai-explorations',root)
 
-sequelize.authenticate().then(() => {
-    logger.info('DB connection established successfully!')
-    app.listen(port, () => {
-        logger.info(`Listening to port ${port}`)
-    })
-}).catch((error) => {
-    logger.error('Unable to connect to database', error)
+logger.info('Starting server...')
+app.listen(port, () => {
+    logger.info(`Listening to port ${port}`)
 })
-
-process.on('exit',function(){
-    logger.info('DB Connection Ended!!')
-    sequelize.close();
- })
